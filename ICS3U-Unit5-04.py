@@ -21,19 +21,19 @@ def main():
     # This function gets the volume
 
     # Input
-    height_from_user = input("Enter the height of the cylinder(mm): ")
     radius_from_user = input("Enter the radius of the cylinder(mm): ")
+    height_from_user = input("Enter the height of the cylinder(mm): ")
 
     try:
-        height_from_user = float(height_from_user)
         radius_from_user = float(radius_from_user)
+        height_from_user = float(height_from_user)
         # call functions
         final_volume = calculate_cylinder_volume(height_from_user, radius_from_user)
         if final_volume == -1:
             print("Invalid Input")
         else:
             print(
-                "The volume of this cylinder with the radius of {0} mm and height {1} mm is {2} mm³.".format(
+                "\nThe volume of this cylinder with the radius of {0}mm and height {1}mm is {2}mm³.".format(
                     radius_from_user, height_from_user, final_volume
                 )
             )
@@ -45,4 +45,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
